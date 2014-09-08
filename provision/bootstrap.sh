@@ -54,10 +54,11 @@ sudo apt-get install -y oracle-java7-installer
 sudo update-alternatives --config java
 echo 'JDK 7 installed successfully!'
 
-#maven 3
+#Maven 3
 sudo apt-get install -y maven
 echo 'Maven installed successfully!'
 
+#Eclipse Indigo
 echo 'Installing Eclipse...'
 sudo apt-get install -y eclipse
 echo 'Eclipse installed successfully!'
