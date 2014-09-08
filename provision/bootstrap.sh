@@ -35,3 +35,29 @@ if [[ $ping_result == *bytes?from* ]]; then
 else
         echo "No external network available. Package installation and maintenance skipped."
 fi
+
+#installing git
+sudo apt-get install -y git
+echo 'Git installed successfully!'
+
+#installing jre
+sudo apt-get install -y default-jre 
+echo 'JRE installed successfully!'
+
+#adding jdk oracle repository
+sudo apt-get install -y python-software-properties
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+
+#installing jdk
+sudo apt-get install -y oracle-java7-installer
+sudo update-alternatives --config java
+echo 'JDK 7 installed successfully!'
+
+#maven 3
+sudo apt-get install -y maven
+echo 'Maven installed successfully!'
+
+echo 'Installing Eclipse...'
+sudo apt-get install -y eclipse
+echo 'Eclipse installed successfully!'
