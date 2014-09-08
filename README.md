@@ -1,4 +1,4 @@
-Vagrant's Linux Desktop Environment for Windows &amp; Mac
+Vagrant's Linux Desktop Environment for Windows &amp; Mac + Java Environment
 =
 
 By: [Icaro Camelo](http://www.icarocamelo.com) | Originally created by: [vDevices](http://vdevices.com/)
