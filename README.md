@@ -1,7 +1,7 @@
 Vagrant's Linux Desktop Environment for Windows &amp; Mac
 =
 
-By: [Icaro Camelo](http://www.icarocamelo.com) | [vDevices](http://vdevices.com/)
+By: [Icaro Camelo](http://www.icarocamelo.com) | Originally created by: [vDevices](http://vdevices.com/)
 
 ### This Project's Purpose
 
