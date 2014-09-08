@@ -1,11 +1,11 @@
 Vagrant's Linux Desktop Environment for Windows &amp; Mac
 =
 
-By: [Pablo Carranza](https://plus.google.com/107285164064863645881?rel=author) | [vDevices](http://vdevices.com/)
+By: [Icaro Camelo](http://www.icarocamelo.com) | [vDevices](http://vdevices.com/)
 
 ### This Project's Purpose
 
-To provide a _simple_  (while not the only) way for Windows &amp; Mac users to launch a virtual machine ("VM") with a Linux Desktop environment &ndash; sandboxed on their local computer.
+To provide a _simple_  (while not the only) way for Windows &amp; Mac users to launch a virtual machine ("VM") with a Linux Desktop environment &ndash; sandboxed on their local computer with a *Java Development environment*.
 
 ### Contributing
 
@@ -75,9 +75,9 @@ Other possible VirtualBox configurations (although, outside the scope of this pr
 
 1. Clone or extract the project's repository into a local directory, e.g.
 
-	* `git clone git://github.com/vDevices/Vagrant-LinuxDesktop.git vagrant-desktop`
+	* `git clone git://github.com/icarocamelo/Vagrant-LinuxDesktop.git vagrant-desktop`
 	* **OR** use [GitHub for Windows](http://windows.github.com/) or [GitHub for Mac](http://mac.github.com/) by clicking on the `Clone in Desktop` button
-	* **OR** download and extract the repository master [zip file](https://github.com/vDevices/Vagrant-LinuxDesktop/archive/master.zip)
+	* **OR** download and extract the repository master [zip file](https://github.com/icarocamelo/Vagrant-LinuxDesktop/archive/master.zip)
 
 1. Change into the new directory with `cd vagrant-desktop`
 
