@@ -1,11 +1,13 @@
-Vagrant's Linux Desktop Environment for Windows &amp; Mac + Java Environment
+Vagrant's Linux Desktop Environment for Windows &amp; Mac + Any* Environment
 =
 
 By: [Icaro Camelo](http://www.icarocamelo.com) | Originally created by: [vDevices](http://vdevices.com/)
 
 ### This Project's Purpose
 
-To provide a _simple_  (while not the only) way for Windows &amp; Mac users to launch a virtual machine ("VM") with a Linux Desktop environment &ndash; sandboxed on their local computer with a *Java Development environment*.
+To provide a _simple_  (while not the only) way for Windows &amp; Mac users to launch a virtual machine ("VM") with a Linux Desktop environment &ndash; sandboxed on their local computer with *Any Development environment*. 
+
+You are able to use all provisioning scripts inside /provision folder to create a development environment.
 
 ### Contributing
 
