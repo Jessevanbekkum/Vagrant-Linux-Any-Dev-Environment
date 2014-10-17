@@ -7,7 +7,7 @@
 # the '--provision' flag; also when `vagrant provision`, or `vagrant reload --provision`
 # are used. It provides all of the default packages and configurations included
 # with Vagrant's Ubuntu 12.04 Desktop Environment for Windows. You can also bring up your
-# environment and explicitly not run provisioners by specifying '--no-provision'.
+# environment and explicitly not run provisioners by specifying '--no-provision'
 
 # By storing the date now, we can calculate the duration of provisioning at the
 # end of this script.
