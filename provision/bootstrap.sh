@@ -25,8 +25,6 @@ fi
 
 apt-get update && apt-get -y upgrade && apt-get -y autoremove
 
-apt-get install -y ubuntu-desktop
-
 end_seconds="$(date +%s)"
 echo "-----------------------------"
 echo "Provisioning complete in "$(expr $end_seconds - $start_seconds)" seconds"
@@ -36,29 +34,30 @@ else
         echo "No external network available. Package installation and maintenance skipped."
 fi
 
-#installing git
-sudo apt-get install -y git
-echo 'Git installed successfully!'
 
-#installing jre
-sudo apt-get install -y default-jre 
-echo 'JRE installed successfully!'
+# Per:
+#  http://docs.openstack.org/developer/nova/devref/development.environment.html
+#  as well as some docs on the requirements for python-ldap
+sudo apt-get install -y git-core libxml2-dev libxslt-dev build-essential python-dev libsqlite3-dev libreadline6-dev libgdbm-dev zlib1g-dev libbz2-dev sqlite3 zip libssl-dev python-pip python-tox graphviz libvirt-dev libmysqlclient-dev libpq-dev libffi-dev pkg-config libldap2-dev libsasl2-dev
+echo 'Packages installed successfully!'
 
-#adding jdk oracle repository
-sudo apt-get install -y python-software-properties
-sudo add-apt-repository ppa:webupd8team/java
-sudo apt-get update
+# Per: http://docs.openstack.org/developer/keystone/setup.html
+#installing setuptools
+wget https://bootstrap.pypa.io/ez_setup.py -O - | sudo python
+echo 'Setuptools installed successfully'
 
-#installing jdk
-sudo apt-get install -y oracle-java7-installer
-sudo update-alternatives --config java
-echo 'JDK 7 installed successfully!'
+# Installing virtualenv
+sudo pip install virtualenv virtualenvwrapper
+echo 'virtualenv installed'
 
-#Maven 3
-sudo apt-get install -y maven
-echo 'Maven installed successfully!'
+# Downloading keystone source
+git clone http://github.com/openstack/keystone.git
+cd keystone
+git remote add promptworks http://github.com/promptworks/keystone.git
+git fetch promptworks
+git checkout stable/juno-pw-tweaks
+echo 'PromptWorks keystone checked out'
 
-#Eclipse Indigo
-echo 'Installing Eclipse...'
-sudo apt-get install -y eclipse
-echo 'Eclipse installed successfully!'
+# python tools/install_venv.py
+python tools/install_venv.py
+echo 'Keystone Requirements installed'
